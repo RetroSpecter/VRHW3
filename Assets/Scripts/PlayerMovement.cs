@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering.PostProcessing;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -14,8 +13,6 @@ public class PlayerMovement : MonoBehaviour {
 
     public List<gestureAngle> inputs = new List<gestureAngle>();
     public float maxFrameData = 80;
-    [Space()]
-    public PostProcessVolume pp;
 
     // Update is called once per frame
     void Update() {
@@ -53,7 +50,7 @@ public class PlayerMovement : MonoBehaviour {
         }
 
         if (Input.GetKeyDown(KeyCode.Space)) {
-            SwimForward();
+            print(ga.asdf());
         }
 
         if (maxFrameData < inputs.Count)
@@ -71,24 +68,14 @@ public class PlayerMovement : MonoBehaviour {
 
     IEnumerator curSwim;
     IEnumerator SwimForwardCor(float distance, float speed, Vector3 direction) {
-        Vignette vign;
-        pp.profile.TryGetSettings(out vign);
-        vign.intensity.value = 0;
         Vector3 targetPos = transform.position + direction * distance;
         while (Vector3.Distance(transform.position, targetPos) > 0.1f) {
             transform.Translate(direction * speed);
-            vign.intensity.value = Mathf.Min(0.5f, vign.intensity.value +  0.05f);
             yield return null;
         }
-
         curSwim = null;
-
-        while (vign.intensity.value > 0)
-        {
-            vign.intensity.value -= 0.05f;
-            yield return null;
-        }
     }
+
     [System.Serializable]
     public struct gestureAngle {
         public float leftToCamera;

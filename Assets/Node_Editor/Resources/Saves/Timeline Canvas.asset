@@ -1,0 +1,237 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9396c92b94b064883de5903a0ec1b2, type: 3}
+  m_Name: Timeline Canvas
+  m_EditorClassIdentifier: 
+  editorStates:
+  - {fileID: 114260616997866820}
+  saveName: Assets\Node_Editor\Resources\Saves\Timeline Canvas
+  savePath: Assets\Node_Editor\Resources\Saves\Timeline Canvas.asset
+  livesInScene: 0
+  nodes:
+  - {fileID: 114258327511398866}
+  - {fileID: 114224233765293316}
+  - {fileID: 114967695704917692}
+  groups: []
+  rootNode: {fileID: 0}
+--- !u!114 &114224233765293316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b8db67381e453148a4a16f08bf4cbb5, type: 3}
+  m_Name: Timeline Node
+  m_EditorClassIdentifier: 
+  position: {x: -228.80002, y: -307.4}
+  dynamicConnectionPorts:
+  - {fileID: 114535803453935826}
+  - {fileID: 114283504434676160}
+  backgroundColor: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 1}
+  currentTrack: {fileID: 0}
+  triggers:
+  - trigger: {fileID: 0}
+    type: 0
+    targetTrack:
+      timelineTrack: {fileID: 0}
+      triggers: []
+  - trigger: {fileID: 0}
+    type: 0
+    targetTrack:
+      timelineTrack: {fileID: 0}
+      triggers: []
+  inputKnob: {fileID: 114877615571343766}
+--- !u!114 &114258327511398866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b8db67381e453148a4a16f08bf4cbb5, type: 3}
+  m_Name: Timeline Node
+  m_EditorClassIdentifier: 
+  position: {x: 123.29999, y: -431.5}
+  dynamicConnectionPorts:
+  - {fileID: 114259547931362356}
+  backgroundColor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
+  currentTrack: {fileID: 0}
+  triggers:
+  - trigger: {fileID: 0}
+    type: 0
+    targetTrack:
+      timelineTrack: {fileID: 0}
+      triggers: []
+  inputKnob: {fileID: 114939006221681926}
+--- !u!114 &114259547931362356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017e2c7fd038ecb46b317c1e003f31dc, type: 3}
+  m_Name: Output
+  m_EditorClassIdentifier: 
+  body: {fileID: 114258327511398866}
+  direction: 2
+  maxConnectionCount: 1
+  styleID: System.String
+  _connections: []
+  side: 2
+  sidePosition: 103.979996
+  sideOffset: 0
+--- !u!114 &114260616997866820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ab6487237ff124ea4c2aa5de9ce3fb, type: 3}
+  m_Name: MainEditorState
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  parentEditor: {fileID: 0}
+  selectedNode: {fileID: 114967695704917692}
+  panOffset: {x: 47.400013, y: 310.20007}
+  zoom: 1.8
+--- !u!114 &114283504434676160
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017e2c7fd038ecb46b317c1e003f31dc, type: 3}
+  m_Name: Output
+  m_EditorClassIdentifier: 
+  body: {fileID: 114224233765293316}
+  direction: 2
+  maxConnectionCount: 1
+  styleID: System.String
+  _connections: []
+  side: 2
+  sidePosition: 169.98
+  sideOffset: 0
+--- !u!114 &114535803453935826
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017e2c7fd038ecb46b317c1e003f31dc, type: 3}
+  m_Name: Output
+  m_EditorClassIdentifier: 
+  body: {fileID: 114224233765293316}
+  direction: 2
+  maxConnectionCount: 1
+  styleID: System.String
+  _connections:
+  - {fileID: 114939006221681926}
+  side: 2
+  sidePosition: 103.979996
+  sideOffset: 0
+--- !u!114 &114877615571343766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017e2c7fd038ecb46b317c1e003f31dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 114224233765293316}
+  direction: 1
+  maxConnectionCount: 1
+  styleID: System.String
+  _connections:
+  - {fileID: 114969121596386434}
+  side: 4
+  sidePosition: 45.97754
+  sideOffset: 0
+--- !u!114 &114939006221681926
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017e2c7fd038ecb46b317c1e003f31dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 114258327511398866}
+  direction: 1
+  maxConnectionCount: 1
+  styleID: System.String
+  _connections:
+  - {fileID: 114535803453935826}
+  side: 4
+  sidePosition: 45.97754
+  sideOffset: 0
+--- !u!114 &114967695704917692
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c54686b1a6c9243a8013890b0d9931, type: 3}
+  m_Name: Root Timeline Node
+  m_EditorClassIdentifier: 
+  position: {x: -569.2, y: -315.4001}
+  dynamicConnectionPorts: []
+  backgroundColor: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
+  rootTimeline: {fileID: 0}
+  outputKnob: {fileID: 0}
+--- !u!114 &114969121596386434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017e2c7fd038ecb46b317c1e003f31dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 114967695704917692}
+  direction: 2
+  maxConnectionCount: 1
+  styleID: System.String
+  _connections:
+  - {fileID: 114877615571343766}
+  side: 2
+  sidePosition: 45.97754
+  sideOffset: 0
